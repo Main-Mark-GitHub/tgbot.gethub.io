@@ -1,77 +1,35 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebPage with Brython</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
+<html lang="en" class="no-js"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Testing WebApp</title>
+
+   
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/print.css" media="print">
+
+  <meta name="description" content="Page description">
+  <meta property="og:title" content="Unique page title - My Site">
+  <meta property="og:description" content="Page description">
+  <meta property="og:image" content="https://www.mywebsite.com/image.jpg">
+  <meta property="og:image:alt" content="Image description">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://www.mywebsite.com/page">
+  <link rel="canonical" href="https://www.mywebsite.com/page">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/my.webmanifest">
+  <meta name="theme-color" content="#FF00FF">
 </head>
-<style>
-    body {
-        background-color: #121212;
-        color: #ffffff;
-        font-family: 'Arial', sans-serif;
-    }
 
-    a {
-        color: #bb86fc;
-        text-decoration: none;
-    }
+<body>
+  <!-- Content -->
+   <h1>Tetsting WebApp page</h1>
+   <img src="https://sun1-17.userapi.com/zYVqKSnWM0VFEYXDk-m7icQo_zut9r8jrVSqMA/aZHAilrhwFE.jpg">
 
-    a:hover {
-        text-decoration: underline;
-    }
-
-    button {
-        background-color: #1f1f1f;
-        color: #ffffff;
-        border: 1px solid #bb86fc;
-        padding: 10px 15px;
-        cursor: pointer;
-        font-family: 'Arial', sans-serif;
-        transition: background-color 0.3s, color 0.3s;
-    }
-
-    button:hover {
-        background-color: #bb86fc;
-        color: #121212;
-    }
-
-    h1, h2, h3 {
-        color: #ffffff;
-        font-family: 'Arial', sans-serif;
-    }
-
-    p {
-        color: #e0e0e0;
-        font-family: 'Arial', sans-serif;
-    }
-</style>
-
-
-<body onload="brython()">
-
-<h1>Example of using Brython</h1>
-<h2>In the WebApp</h2>
-
-
-<script type="text/python">
-    from browser import document
-
-    def greet(event):
-        document["output"].text = "Hello World!!"
-    def greet_2(event):
-        document["output"].text = ""
-
-
-
-    document["my_button"].bind("click", greet)
-    document["my_button_2"].bind("click", greet_2)
-</script>
-
-<button id="my_button">+</button>
-<button id="my_button_2">-</button>
-<p id="output"></p>
-
-</body>
-</html>
+</body></html>

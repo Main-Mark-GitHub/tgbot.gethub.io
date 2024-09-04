@@ -52,6 +52,7 @@
 <body onload="brython()">
 
 <h1>Example of using Brython</h1>
+<h2>In the WebApp</h2>
 
 
 <script type="text/python">
